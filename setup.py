@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sentient-shared-libraries",
-    version="1.0.0",
+    version="1.0.1",
     author="Sentient Control Systems",
     author_email="levi@sentientcontrolsystems.com",
     description=("Shared libraries required all Sentient monitors and "
