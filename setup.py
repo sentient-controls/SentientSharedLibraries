@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sentient-shared-libraries",
-    version="1.0.1",
+    version="1.0.3",
     author="Sentient Control Systems",
     author_email="levi@sentientcontrolsystems.com",
     description=("Shared libraries required all Sentient monitors and "
@@ -19,4 +19,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ),
+    install_requires=[
+        'influxdb',
+    ],
+
 )
