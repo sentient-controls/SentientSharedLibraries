@@ -4,7 +4,7 @@ import unittest
 from config_loader import ConfigLoader
 
 
-class MyTest(unittest.TestCase):
+class InfluxDBTest(unittest.TestCase):
 
     @staticmethod
     def test_influxdb():
