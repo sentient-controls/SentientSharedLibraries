@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sentient-shared-libraries",
-    version="1.0.3",
+    version="1.0.4",
     author="Sentient Control Systems",
     author_email="levi@sentientcontrolsystems.com",
     description=("Shared libraries required all Sentient monitors and "
@@ -20,6 +20,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ),
     install_requires=[
+        'pytest',
         'influxdb',
     ],
 
