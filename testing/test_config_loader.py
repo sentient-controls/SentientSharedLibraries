@@ -1,28 +1,39 @@
 import sys
-import os
 import unittest
 
-sys.path.insert(0,'../')
+sys.path.insert(0, '../')
 from SentientSharedLibraries.config_loader import ConfigLoader
 
 
 class MyTest(unittest.TestCase):
-    def test_influxdb(self):
+
+    @staticmethod
+    def test_influxdb():
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']
-    def test_influxdb_address(self):
+
+    @staticmethod
+    def test_influxdb_address():
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']['address']
-    def test_influxdb_port(self):
+
+    @staticmethod
+    def test_influxdb_port():
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']['port']
-    def test_influxdb_password(self):
+
+    @staticmethod
+    def test_influxdb_password():
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']['password']
-    def test_influxdb_user(self):
+
+    @staticmethod
+    def test_influxdb_user():
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']['user']
-    def test_influxdb_db(self):
+
+    @staticmethod
+    def test_influxdb_db():
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']['db']
 
