@@ -1,8 +1,7 @@
 import sys
 import unittest
 
-sys.path.insert(0, '../')
-from SentientSharedLibraries.config_loader import ConfigLoader
+from config_loader import ConfigLoader
 
 
 class MyTest(unittest.TestCase):
@@ -37,3 +36,6 @@ class MyTest(unittest.TestCase):
         local = ConfigLoader('test.conf')
         assert local.config['influxdb']['db']
 
+
+if __name__ == '__main__':
+    unittest.main()
