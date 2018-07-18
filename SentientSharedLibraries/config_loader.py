@@ -1,5 +1,6 @@
 import json
 
+
 class ConfigLoader:
     def __init__(self, path):
         self.path = path
