@@ -8,7 +8,7 @@ class InfluxDBTest(unittest.TestCase):
 
     @staticmethod
     def test_influxdb():
-        local = ConfigLoader('testing/test.conf')
+        local = ConfigLoader('test.conf')
         assert local.config['influxdb']
 
     @staticmethod
